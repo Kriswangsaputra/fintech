@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintrack</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/063c14fab4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/modul.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <div id="header"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="container-fluid main-content">
+        
+        <div class="card card-halo">
+            <div class="card-body">
+                <h2 class="halo"><strong>Halo, FinTrackers! </strong>👋</h2>
+                <p>Siap melanjutkan perjalanan literasi keuanganmu?</p>
+            </div>
+        </div>
+
+        <div class="modul-pembelajaran">
+          <section class="judul">
+            <div class="icon-book-open">
+              <i class="fa-solid fa-book-open"></i>
+              <h4>Modul Pembelajaran</h4>
+            </div>
+          </section>
+
+          <section class="list-modul">
+            <div class="card card-modul1">
+              <div class="card-header card-header-modul1">
+                <h5>modul 1</h5>
+                <h2>Pengertian & Sejarah Fintech</h2>
+              </div>
+              <div class="card-body card-body-modul1">
+                <p class="card-text">Memahami revolusi digital dari Era 1.0 hingga 3,5</p>
+                <a href="#" class="btn btn-primary btn-modul1">Mari Pelajari</a>
+              </div>
+            </div>
+
+            <div class="card card-modul2">
+              <div class="card-header card-header-modul2">
+                <h5>modul 2</h5>
+                <h2>Jenis-jenis Fintech</h2>
+              </div>
+              <div class="card-body card-body-modul2">
+                <p class="card-text">Payment, Lending, crowdfunding, Insurtech dan Blockchain</p>
+                <a href="#" class="btn btn-primary btn-modul2">Mari Pelajari</a>
+              </div>
+            </div>
+
+            <div class="card card-modul3">
+              <div class="card-header card-header-modul3">
+                <h5>modul 3</h5>
+                <h2>Inovasi QRIS TAP</h2>
+              </div>
+              <div class="card-body card-body-modul3">
+                <p class="card-text">Fitur tarik tunai, setor tunai dan transfer dalam satu kode QR </p>
+                <a href="#" class="btn btn-primary btn-modul3">Mari Pelajari</a>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- JS Boostrtap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      import { header, footer } from "../js/header-footer.js";
+
+      document.getElementById('header').innerHTML = header();
+      document.getElementById('footer').innerHTML = footer();
+    </script>
+  </body>
+</html>

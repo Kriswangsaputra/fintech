@@ -1,0 +1,142 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  background-color: #f8fafc;
+}
+
+/* navbar */
+.navbar {
+  padding: 1rem 4rem;
+  background-color: white;
+  border-bottom: solid 1px #fce7f3;
+}
+
+/* main */
+main .main-content {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+main .main-content .card-halo {
+    border: solid 1px #fce7f3;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+section .card{
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    min-width: 26rem;
+    max-width: 26rem;
+}
+
+section .card-header{
+    border-radius: 15px;
+}
+
+.card-body p{
+    color: #6b7280;;
+}
+
+.icon-book-open{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-book-open i{
+    color: #ec4899;
+    font-size: 2rem;
+}
+
+.icon-book-open h4{
+    margin-bottom:0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.modul-pembelajaran {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list-modul {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.card-header h5{
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 80px;
+    padding: 0.5rem;
+    border-radius: 8px;
+
+}
+
+.card-header h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.card-header-modul1{
+    background: linear-gradient(to right, #db2777, #f43f5e);
+    border-radius: 15px;
+}
+
+.card-body-modul1 a{
+    background: linear-gradient(to right, #db2777, #f43f5e);
+    border: none;
+}
+
+.card-header-modul2{
+    background: linear-gradient(to right, #9333ea, #4f46e5);
+    border-radius: 15px;
+}
+
+.card-body-modul2 a{
+    background: linear-gradient(to right, #9333ea, #4f46e5);
+    border: none;
+}
+
+.card-header-modul3{
+    background: linear-gradient(to right, #1e293b, #0f172a);
+    border-radius: 15px;
+}
+
+.card-body-modul3 a{
+    background: linear-gradient(to right, #1e293b, #0f172a);
+    border: none;
+}
+
+/* footer */
+footer {
+  background-color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
