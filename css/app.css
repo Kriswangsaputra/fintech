@@ -10,6 +10,20 @@ body {
   font-size: 14px;
 }
 
+@media screen and (max-width : 768px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .jumbotron {
+    padding: 6rem 1rem 10rem 1rem;
+  }
+
+  main .main-content {
+    padding: 4rem 1rem;
+  }
+}
+
 /* navbar */
 .navbar {
   padding: 1rem 4rem;
