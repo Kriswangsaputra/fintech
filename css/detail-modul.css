@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  background-color: #f8fafc;
+}
+
+/* navbar */
+.navbar {
+  padding: 1rem 4rem;
+  background-color: white;
+  border-bottom: solid 1px #fce7f3;
+}
+
+/* main */
+main .main-content {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.tombol-kembali a {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: bold;
+}
+.tombol-kembali a:hover{
+    color: #DB2777;
+}
+
+/* nav tab */
+#myTab{
+    border-color: #DB2777;
+}
+
+#materi-tab, #infografis-tab, #video-edukasi-tab, #kuis-tab {
+    color: #6b7280;
+}
+
+.nav-link.active {
+    border-top-color: #DB2777 !important;
+    border-left-color: #DB2777 !important;
+    border-right-color: #DB2777 !important;
+
+    color: #DB2777 !important;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+  background-color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+
+/* tambahan responsifitas */
+@media screen and (max-width : 768px) {
+  .navbar {
+    margin: 0px;
+    padding: 0.5rem;
+  }
+
+  main .main-content {
+    padding: 4rem 1.5rem;
+    gap: 2rem;
+  }
+
+  section .card{
+    min-width: 18rem;
+    }
+}
+

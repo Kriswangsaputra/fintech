@@ -140,3 +140,22 @@ footer {
   text-align: center;
   margin-top: 4rem;
 }
+
+
+/* tambahan responsifitas */
+@media screen and (max-width : 768px) {
+  .navbar {
+    margin: 0px;
+    padding: 0.5rem;
+  }
+
+  main .main-content {
+    padding: 4rem 1.5rem;
+    gap: 2rem;
+  }
+
+  section .card{
+    min-width: 18rem;
+    }
+}
+
