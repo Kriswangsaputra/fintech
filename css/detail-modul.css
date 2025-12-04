@@ -54,6 +54,54 @@ main .main-content {
     font-weight: bold;
 }
 
+/* article */
+article {
+    border: solid 1px #fce7f3;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+article .card{
+    background-color: #fdf2f8;
+    border: none;
+    border-left: 4px solid #DB2777;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+article .card .card-body h3 {
+    color: #c11965;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+article .card .card-body p {
+    font-size: 13px;
+}
+
+.tab-content .tab-pane {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.tab-content .tab-pane p, ul li{
+    color: #475569;
+    font-weight: normal;
+
+}
+
+.tab-content .tab-pane ol{
+    font-weight: bold;
+}
+
+.tab-content .tab-pane h2{
+    color: #0F172A;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /* footer */
 footer {
   background-color: white;
@@ -77,6 +125,15 @@ footer {
 
   section .card{
     min-width: 18rem;
+    }
+    .nav-link {
+        max-width: 90px;
+        padding: 10px;
+        font-size: 12.5px;
+    }
+
+    #infografis-tab, #kuis-tab{
+        padding-block: 19px;
     }
 }
 
