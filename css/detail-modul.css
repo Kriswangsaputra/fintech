@@ -102,6 +102,78 @@ article .card .card-body p {
     font-weight: bold;
 }
 
+/* quiz */
+.quiz-container {
+    border: solid 1px #fce7f3;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.header-soal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomor {
+    background: #fdf2f8;
+    border-radius: 99px;
+    padding: 0.5rem 1rem;
+}
+
+.nomor h4{
+    font-size: 12px;
+    font-weight: bold;
+    color: #DB2777;
+    margin-bottom: 0;
+}
+
+.point {
+    background: #fefce8;
+    border-radius: 99px;
+    border: 1px solid #fef08a;
+    padding: 0.5rem 1rem;
+}
+
+.point h4{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ca8a04;
+    margin-bottom: 0;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 1rem;
+}
+
+.options label{
+    padding: 1rem 1rem;
+    border: 3px solid #f1f5f9;
+    border-radius: 10px;
+    color: #475569;
+    width: 100%;
+
+    text-align: start;
+}
+
 /* footer */
 footer {
   background-color: white;

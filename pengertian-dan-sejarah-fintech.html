@@ -71,6 +71,8 @@
         <div class="tab-content" id="myTabContent">
 
             <!-- Pengertian & Sejarah Fintech -->
+
+            <!-- Materi Bacaan -->
             <div class="tab-pane fade show active" id="materi-tab-pane" role="tabpanel" aria-labelledby="materi-tab" tabindex="0">
 
               <article class="materi-bacaan">
@@ -171,10 +173,29 @@
 
             </div>
 
+            <!-- Infografis -->
+            <div class="tab-pane fade" id="infografis-tab-pane" role="tabpanel" aria-labelledby="infografis-tab" tabindex="0">
+              
+            </div>
 
-            <div class="tab-pane fade" id="infografis-tab-pane" role="tabpanel" aria-labelledby="infografis-tab" tabindex="0">b</div>
             <div class="tab-pane fade" id="video-edukasi-tab-pane" role="tabpanel" aria-labelledby="video-edukasi-tab" tabindex="0">c</div>
-            <div class="tab-pane fade" id="kuis-tab-pane" role="tabpanel" aria-labelledby="kuis-tab" tabindex="0">d</div>
+
+            <!-- kuiz -->
+            <div class="tab-pane fade" id="kuis-tab-pane" role="tabpanel" aria-labelledby="kuis-tab" tabindex="0">
+              
+              <div class="quiz-wrapper">
+                <!-- Container Soal -->
+                <div id="quiz-container" class="quiz-container">
+                  <!-- soal akan ditampilkan -->
+                  <div id="inner-container" class="inner-container"></div>
+
+                  <!-- tombol next -->
+                  <div class="tombol-next">
+                    <button type="button" class="btn btn-primary" id="next-btn">Berikutnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
 
 
@@ -199,5 +220,6 @@
       document.getElementById('header').innerHTML = header();
       document.getElementById('footer').innerHTML = footer();
     </script>
+    <script src="js/quiz-sejarah-fintech.js"></script>
   </body>
 </html>
