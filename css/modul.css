@@ -133,55 +133,12 @@ section .card-header{
     border: none;
 }
 
-/* Quiz */
-.quiz-wrapper {
-  max-width: 600px;
-  margin: 40px auto;
-  background: white;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 14px rgba(0,0,0,0.1);
-}
-
-.timer-box {
-  text-align: right;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ff4747;
-  margin-bottom: 10px;
-}
-
-.quiz-container h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.options button {
-  padding: 14px;
-  font-size: 16px;
-  text-align: left;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  background: #ffffff;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.options button:hover {
-  border-color: #007bff;
-  background: #eef6ff;
-}
-
-.options button.selected {
-  background: #007bff;
-  color: white;
-  border-color: #007bff;
+/* modul card terkunci */
+/* modul 1 */
+.card-modul1.locked{
+  opacity: 0.4;
+  filter: grayscale(0.9);
+  pointer-events: none;
 }
 
 /* agar tampilan rapi di HP */

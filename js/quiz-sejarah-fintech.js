@@ -100,12 +100,43 @@ function nextQuetion() {
 function showResult() {
     const container = document.getElementById("quiz-container");
 
-    container.innerHTML = `
+    if (score > 3) {
+        sessionStorage.setItem("modul1", true);
+        return container.innerHTML = `
         <div class="result-box">
-            <h2>KUIS SELESAI!</h2>
-            <p>Skor Kamu: <strong>${score}</strong> dari <strong>${questions.length}</strong></p>
+            <div class="trophy-icon">
+                <i class="fa-solid fa-trophy done"></i>
+            </div>
+
+            <div class="congratulation-wrap">
+                <h2>Hebat, FinTrackers!</h2>
+                <p>Kamu menjawab <strong>${score} benar</strong> dari <strong>${questions.length} soal!</strong></p>
+            </div>
+
+            <div class="button-done">
+                <button type="button" class="btn btn-primary">Kembali ke Materi</button>
+            </div>
         </div>
     `;
+    } else {
+        return container.innerHTML = `
+        <div class="result-box">
+            <div class="trophy-icon-gagal">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div class="congratulation-wrap-gagal">
+                <h2>Jangan Patah Semangat, FinTrackers!</h2>
+                <p>Kamu menjawab <strong>${score} benar</strong> dari <strong>${questions.length} soal!</strong></p>
+                <p>Silakan kerjakan kembali!
+            </div>
+
+            <div class="button-gagal">
+                <button type="button" class="btn btn-primary">Kembali ke Materi</button>
+            </div>
+        </div>
+    `;
+    }
 
     document.getElementById("next-btn").style.display = "none";
 }

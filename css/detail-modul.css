@@ -184,6 +184,92 @@ article .card .card-body p {
     border-color: #ec4899 !important;
 }
 
+.tombol-next button{
+    background-color: white;
+    border: 2px solid #ec4899;
+    color: #ec4899;
+}
+
+.tombol-next button:hover{
+    background-color: #fdf2f8;
+    border: 2px solid #ec4899;
+    color: #ec4899;
+}
+
+/* result box */
+.result-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.result-box .trophy-icon{
+    background-color: #FFFBEB;
+    color: #F59E0B;
+    border: 3px solid #FEF3C7;
+    border-radius: 99999px;
+    padding: 2rem;
+
+    font-size: 2rem;
+}
+
+.result-box .trophy-icon .done {
+    animation: bounce 1s infinite;
+
+    align-self: center;
+}
+
+.congratulation-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ini versi yang ujiannya gagal */
+.result-box .trophy-icon-gagal{
+    background-color: #FFE4E6;
+    color: #ec4899;
+    border: 3px solid #FECDD3;
+    border-radius: 99999px;
+    padding: 2rem;
+
+    font-size: 2rem;
+}
+
+.result-box .trophy-icon .fa-circle-xmark {
+    animation: bounce 1s infinite;
+
+    align-self: center;
+}
+
+.congratulation-wrap-gagal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    /* Pada awal dan akhir animasi, elemen berada di posisi normal */
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    /* Pada titik tengah, elemen 'melompat' kembali ke posisi awal */
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.congratulation-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* footer */
 footer {
   background-color: white;
