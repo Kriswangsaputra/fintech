@@ -45,6 +45,13 @@
             <div class="card-body">
                 <h2 class="halo"><strong>Halo, FinTrackers! </strong>👋</h2>
                 <p>Siap melanjutkan perjalanan literasi keuanganmu?</p>
+                <div class="mb-3 form-input-name" id="form-input-name">
+                  <label for="userName" class="form-label">Masukan nama kamu disini!</label>
+                  <div class="name-input">
+                    <input type="Text" class="form-control" id="userName" placeholder="FinTrackers">
+                    <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -57,7 +64,7 @@
           </section>
 
           <section class="list-modul">
-            <div class="card card-modul1">
+            <div class="card card-modul1" id="modul1">
               <div class="card-header card-header-modul1">
                 <h5>modul 1</h5>
                 <h2>Pengertian & Sejarah Fintech</h2>
@@ -68,7 +75,7 @@
               </div>
             </div>
 
-            <div class="card card-modul2">
+            <div class="card card-modul2" id="modul2">
               <div class="card-header card-header-modul2">
                 <h5>modul 2</h5>
                 <h2>Jenis-jenis Fintech</h2>
@@ -79,7 +86,7 @@
               </div>
             </div>
 
-            <div class="card card-modul3">
+            <div class="card card-modul3" id="modul3">
               <div class="card-header card-header-modul3">
                 <h5>modul 3</h5>
                 <h2>Inovasi QRIS TAP</h2>
@@ -113,5 +120,6 @@
       document.getElementById('header').innerHTML = header();
       document.getElementById('footer').innerHTML = footer();
     </script>
+    <script src="js/main-modul.js"></script>
   </body>
 </html>

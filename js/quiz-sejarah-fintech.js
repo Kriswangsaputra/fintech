@@ -55,7 +55,7 @@ function showQuestion() {
                 ${q.options.map((option, i) => {
                     const labelHuruf = String.fromCharCode(65+i);
                     return `
-                    <input type="radio" class="btn-check" name="options-base" id="option5-${currentIndex}-${i}" autocomplete="off" value="${option}">
+                    <input type="radio" class="btn-check" name="options-base" id="option5-${currentIndex}-${i}" autocomplete="off" value="${i}">
                     <label class="btn" for="option5-${currentIndex}-${i}"><strong>${labelHuruf}.</strong> ${option}</label>
             `;}).join("")}
             </div>
@@ -100,8 +100,14 @@ function nextQuetion() {
 function showResult() {
     const container = document.getElementById("quiz-container");
 
+    document.getElementById("next-btn").style.display = "none";
+
+    const point = score * 20;
+
+    const savedName = sessionStorage.getItem("namaUser");
+
     if (score > 3) {
-        sessionStorage.setItem("modul1", true);
+        sessionStorage.setItem("modul1_passed", true);
         return container.innerHTML = `
         <div class="result-box">
             <div class="trophy-icon">
@@ -109,12 +115,13 @@ function showResult() {
             </div>
 
             <div class="congratulation-wrap">
-                <h2>Hebat, FinTrackers!</h2>
+                <h2>Hebat, ${savedName}!</h2>
                 <p>Kamu menjawab <strong>${score} benar</strong> dari <strong>${questions.length} soal!</strong></p>
+                <div class="point" id="point"><h4>Point Kamu = ${point}</h4></div>
             </div>
 
             <div class="button-done">
-                <button type="button" class="btn btn-primary">Kembali ke Materi</button>
+                <a href=modul.html type="button" class="btn btn-primary">Kembali ke Materi</a>
             </div>
         </div>
     `;
@@ -126,17 +133,16 @@ function showResult() {
             </div>
 
             <div class="congratulation-wrap-gagal">
-                <h2>Jangan Patah Semangat, FinTrackers!</h2>
+                <h2>Jangan Patah Semangat, ${savedName}!</h2>
                 <p>Kamu menjawab <strong>${score} benar</strong> dari <strong>${questions.length} soal!</strong></p>
-                <p>Silakan kerjakan kembali!
+                <div class="point" id="point"><h4>Point Kamu = ${point}</h4></div>
+                <p>Silakan kerjakan kembali!</p>
             </div>
 
             <div class="button-gagal">
-                <button type="button" class="btn btn-primary">Kembali ke Materi</button>
+                <a href=modul.html type="button" class="btn btn-primary">Kembali ke Materi</a>
             </div>
         </div>
     `;
     }
-
-    document.getElementById("next-btn").style.display = "none";
 }

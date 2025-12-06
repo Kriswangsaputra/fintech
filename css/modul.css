@@ -27,11 +27,52 @@ main .main-content {
     gap: 4rem;
 }
 
+/* Body card hallo fintrackers */
 main .main-content .card-halo {
     border: solid 1px #fce7f3;
     border-radius: 15px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* styling form input name */
+.form-input-name{
+  color: #6b7280;
+}
+
+.name-input{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 40%;
+
+}
+
+.form-control{
+  border-color: #FFE4E6;
+}
+
+.form-control:focus{
+  border: 2px solid #f08abd;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);;
+}
+
+.btn-primary:active{
+  background-color: #e887b7 !important;
+  border-color: #f25ca7 !important;
+}
+
+.name-input button{
+  background-color: #FFE4E6;
+  border-color: #ec4899;
+  color: #ec4899;
+}
+
+.name-input button:hover{
+  background-color: #ec4899;
+  color: white;
+  border-color: #ec4899;
 }
 
 section .card{
@@ -49,7 +90,7 @@ section .card-header{
 }
 
 .card-body p{
-    color: #6b7280;;
+    color: #6b7280;
 }
 
 .icon-book-open{
@@ -135,7 +176,7 @@ section .card-header{
 
 /* modul card terkunci */
 /* modul 1 */
-.card-modul1.locked{
+.locked{
   opacity: 0.4;
   filter: grayscale(0.9);
   pointer-events: none;
