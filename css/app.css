@@ -10,13 +10,6 @@ body {
   font-size: 14px;
 }
 
-/* navbar */
-.navbar {
-  padding: 1rem 4rem;
-  background-color: white;
-  border-bottom: solid 1px #fce7f3;
-}
-
 /* jumbotron */
 .jumbotron {
   background: linear-gradient(to bottom right, #db2777, #f43f5e, #be185d);
@@ -218,14 +211,6 @@ main .main-content .card .card-body h5 {
 main .main-content .card .card-body p {
   font-size: 1rem;
   color: #6b7280;
-}
-
-/* footer */
-footer {
-  background-color: white;
-  padding: 2rem 2rem;
-  text-align: center;
-  margin-top: 4rem;
 }
 
 

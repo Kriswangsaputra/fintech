@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintrack</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/063c14fab4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/kalkulator-keuangan.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <div id="header"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="container-fluid main-content">
+
+        <div class="contet-wrap">
+            <!-- tombol kembali -->
+            <div class="tombol-kembali">
+                <a href="modul.html"><i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard</a>
+            </div>
+
+            <!-- bagian kalkulator -->
+            <div class="kalkulator-wrap">
+                <div class="kalkulator-input">
+                    <div class="card card-input">
+                        <div class="card-body card-body-input">
+                            <div class="input-title">
+                                <i class="fa-solid fa-calculator"></i>
+                                <h2>Input Data Keuangan</h2>
+                            </div>
+                            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="pendapatan" class="form-label">Pendapatan Bulanan (IDR)</label>
+                                    <input type="text" class="form-control" id="pendapatan" aria-describedby="textHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pengeluaran" class="form-label">Pengeluaran Bulanan (IDR)</label>
+                                    <input type="text" class="form-control" id="pengeluaran" aria-describedby="textHelp">
+                                </div>
+                                <label for="profil-risiko" class="form-label">Profil Risiko Kamu</label>
+                                <div class="mb-3 radio-btn">
+                                    <div class="input-radio">
+                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                        <label class="btn label-check btn-secondary" for="option1">Aman</label>
+                                    </div>
+                                    <div class="input-radio">
+                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                        <label class="btn label-check btn-secondary" for="option2">Sedang</label>
+                                    </div>
+                                    <div class="input-radio">
+                                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                        <label class="btn label-check btn-secondary" for="option3">Agresif</label>
+                                    </div>
+                                </div>
+                                <p>Saya berani sedikit risiko untuk untung lebih.</p>
+                                <button type="submit" class="btn btn-primary btn-submit"><i class="fa-solid fa-arrows-rotate"></i>Hitung Alokasi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="kalkulator-insight">
+                    <div class="card">
+                        <div class="card-body">
+                            kalkulator-insight
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- JS Boostrtap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      import { header, footer } from "./js/header-footer.js";
+
+      document.getElementById('header').innerHTML = header();
+      document.getElementById('footer').innerHTML = footer();
+    </script>
+    <script src="js/main-modul.js"></script>
+  </body>
+</html>

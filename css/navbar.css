@@ -1,0 +1,36 @@
+/* navbar */
+.navbar {
+  padding: 1rem 4rem;
+  background-color: white;
+  border-bottom: solid 1px #fce7f3;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse{
+  justify-content: end;
+}
+
+.collapse .navbar-nav{
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+/* navbar active */
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    color: #ec4899;
+}
+
+.collapse .navbar-nav .nav-item .active{
+    color: #ec4899;
+}
+
+/* footer */
+footer {
+  background-color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}

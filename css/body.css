@@ -1,0 +1,22 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  background-color: #f8fafc;
+}
+
+/* main container */
+/* main */
+main .main-content {
+  padding: 4rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-around;
+}
