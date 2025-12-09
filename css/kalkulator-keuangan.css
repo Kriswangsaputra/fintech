@@ -3,7 +3,7 @@
 .contet-wrap{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 4rem;
 
     justify-content: space-between;
     justify-items: start;
@@ -15,7 +15,7 @@
 .tombol-kembali a {
     text-decoration: none;
     color: #6b7280;
-    font-weight: 500;
+    font-weight: bold;
 }
 .tombol-kembali a:hover{
     color: #DB2777;
@@ -219,6 +219,13 @@ form .btn-submit:hover{
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.aset-recomendation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
 .head-recomendation {
     display: flex;
     flex-direction: column;
@@ -247,6 +254,9 @@ form .btn-submit:hover{
     background-color: #f8fafc;
     border: 1px solid #f1f5f9;
     border-radius: 20px;
+
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .card-aset-recomendation:hover{
