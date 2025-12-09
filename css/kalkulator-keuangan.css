@@ -26,7 +26,8 @@
 /* kalkulator wrap positioning */
 .kalkulator-wrap{
     display: flex;
-    gap: 1rem;
+
+    gap: 2rem;
     justify-content: space-between;
 }
 
@@ -131,20 +132,201 @@ form .btn-submit:hover{
 
 
 /* kalkulator insight */
-/* .kalkulator-insight{
+.kalkulator-insight{
     display: flex;
-} */
+    flex-direction: column;
+    gap: 2rem;
+
+    min-width: 60%;
+}
+.card-insight {
+    border-radius: 20px;
+    border: none;
+
+    color: white;
+
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
 
 .card-body-insight{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: space-between;
+
+    background-color: #10b981;
+    border-radius: 20px;
+
+    padding: 2rem;
 }
 
 .head-insight{
     display: flex;
     gap: 2rem;
-
+    justify-content: space-between;
     align-items: center;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-insight .detail h4{
+    opacity: 60%;
+    font-size: 1rem;
+}
+
+.head-insight .detail h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.head-insight .detail .sum{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 99px;
+    padding: 10px;
+
+    width: fit-content;
+}
+
+.head-insight .detail .sum h5{
+    margin-bottom: 0;
+    font-size: 1rem;
+
+}
+
+.icon i{
+    font-size: 8rem;
+    opacity: 30%;
+    align-content: end;
+    margin-right: 0;
+}
+
+.desc-insight  {
+    padding-block-start: 2rem;
+    padding-block-end: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* rekomendasi */
+.card-recomendation {
+    border: 2px solid #f1f5f9;
+    border-radius: 20px;
+
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.head-recomendation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* rekomendasi title */
+.title-recomendation {
+    display: flex;
+    gap: 1rem;
+}
+.title-recomendation i{
+    font-size: 20px;
+    color: #db2777;
+}
+
+.title-recomendation h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #0f172a;
+}
+
+.card-aset-recomendation {
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 20px;
+}
+
+.card-aset-recomendation:hover{
+    border-color: #fbcfe8;
+}
+
+.card-body-aset-recomendation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.persentage-recomendation {
+    background-color: #475569;
+    color: white;
+
+    width: fit-content;
+    padding: 8px;
+
+    border-radius: 10px;
+}
+
+.persentage-recomendation h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.product-recomendation h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.product-recomendation p {
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+.location-recomendation {
+    display: flex;
+    gap: 1rem;
+}
+
+.location-recomendation .location-loc {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    padding-inline: 8px;
+    border-radius: 5px;
+
+    font-size: 0.8rem;
+}
+
+.nominal{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+
+    margin-right: 0;
+}
+
+.nominal h3{
+    margin-bottom: 0;
+    color: #64748b;
+
+    font-size: 1rem;
+}
+
+.nominal h2{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #db2777;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }

@@ -54,6 +54,11 @@
                 <div class="kalkulator-input">
                     <div class="card card-input">
                         <div class="card-body card-body-input">
+
+                            <!-- alert -->
+                            <div class="alert alert-danger" role="alert" id="alert" hidden>
+                            </div>
+                            
                             <div class="input-title">
                                 <i class="fa-solid fa-calculator"></i>
                                 <h2>Input Data Keuangan</h2>
@@ -71,44 +76,67 @@
                                 <label for="profil-risiko" class="form-label">Profil Risiko Kamu</label>
                                 <div class="mb-3 radio-btn">
                                     <div class="input-radio">
-                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" value="Aman">
                                         <label class="btn label-check btn-secondary" for="option1">Aman</label>
                                     </div>
                                     <div class="input-radio">
-                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" value="Sedang">
                                         <label class="btn label-check btn-secondary" for="option2">Sedang</label>
                                     </div>
                                     <div class="input-radio">
-                                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" value="Agresif">
                                         <label class="btn label-check btn-secondary" for="option3">Agresif</label>
                                     </div>
                                 </div>
                                 <p>Saya berani sedikit risiko untuk untung lebih.</p>
-                                <button type="submit" class="btn btn-primary btn-submit"><i class="fa-solid fa-arrows-rotate"></i>Hitung Alokasi</button>
+                                <button type="submit" class="btn btn-primary btn-submit" id="submit"><i class="fa-solid fa-arrows-rotate"></i>Hitung Alokasi</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="kalkulator-insight">
+
+                    <!-- insight -->
                     <div class="card card-insight">
-                        <div class="card-body card-body-insight">
+                        <div class="card-body card-body-insight" id="bgInsight">
                             <div class="head-insight">
                                 <div class="detail">
                                     <h4>Profil Keuangan Kamu</h4>
-                                    <h2>Financial Starter</h2>
+                                    <h2 id="finance-clasification"> - - - </h2>
                                     <div class="sum">
-                                        <h5>Surplus: Rp 4.000.000</h5>
+                                        <h5 id="operation"> - - - </h5>
                                     </div>
                                 </div>
-                                <div class="icon">
-                                    <i class="fa-solid fa-bandage"></i>
+                                <div class="icon" id="icon">
                                 </div>
                             </div>
                             <div class="desc-insight">
-                                <p>Fokus Utama: Likuiditas & Dana Darurat. Kamu butuh akses uang yang cepat dan aman.</p>
+                                <p id="fokus-utama">- - - -</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Rekomendasi -->
+                     <div class="card card-recomendation">
+                      <div class="card-body card-body-recomendation">
+                        <div class="head-recomendation">
+
+                          <!-- title -->
+                          <div class="title-recomendation">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h2>Rekomendasi Alokasi</h2>
+                          </div>
+
+                          <!-- main recomendation -->
+                          <div class="main-recomendation">
+                            <div class="aset-recomendation" id="aset-recomendation">
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                     </div>
+
                 </div>
             </div>
         </div>
@@ -133,6 +161,6 @@
       document.getElementById('header').innerHTML = header();
       document.getElementById('footer').innerHTML = footer();
     </script>
-    <script src="js/main-modul.js"></script>
+    <script src="js/kalkulator.js"></script>
   </body>
 </html>
