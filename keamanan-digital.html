@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintrack</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/063c14fab4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/detail-modul.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <div id="header"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="container-fluid main-content">
+        
+        <!-- Tombol Kembali -->
+        <div class="tombol-kembali">
+            <a href="modul.html"><i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard</a>
+        </div>
+
+        <!-- judul -->
+        <div class="judul">
+            <h2><strong>Keamanan Digital di Era FinTech</strong></h2>
+        </div>
+
+        <!-- Tab -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="materi-tab" data-bs-toggle="tab" data-bs-target="#materi-tab-pane" type="button" role="tab" aria-controls="materi-tab-pane" aria-selected="true">Materi Bacaan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="infografis-tab" data-bs-toggle="tab" data-bs-target="#infografis-tab-pane" type="button" role="tab" aria-controls="infografis-tab-pane" aria-selected="false">Infografis</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="video-edukasi-tab" data-bs-toggle="tab" data-bs-target="#video-edukasi-tab-pane" type="button" role="tab" aria-controls="video-edukasi-tab-pane" aria-selected="false">Video Edukasi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="kuis-tab" data-bs-toggle="tab" data-bs-target="#kuis-tab-pane" type="button" role="tab" aria-controls="kuis-tab-pane" aria-selected="false">Kuis & Poin</button>
+            </li>
+        </ul>
+
+        <!-- content -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Pengertian & Sejarah Fintech -->
+
+            <!-- Materi Bacaan -->
+            <div class="tab-pane fade show active" id="materi-tab-pane" role="tabpanel" aria-labelledby="materi-tab" tabindex="0">
+
+              <article class="materi-bacaan">
+                <div class="card">
+                  <div class="card-body">
+                    <h3>Ringkasan Materi</h3>
+                    <p>penipuan investasi, penipuan bank/aplikasi, modus kepanikan, verifikasi pesan, perlindungan data, dan kewaspadaan pengguna.</p>
+                  </div>
+                </div>
+
+                <p>Di era sekarang, hampir semua aktivitas keuangan berpindah ke ranah digital. Mulai dari membayar makanan, mengisi saldo e-wallet, melakukan transfer dana, hingga membeli instrumen investasi seperti reksa dana atau obligasi. Semua bisa dilakukan hanya dengan sentuhan di layar smartphone. FinTech membuat kehidupan menjadi jauh lebih praktis, cepat, dan mudah diakses.</p>
+                <p>Namun, di balik kemudahan tersebut, ada satu hal penting yang tidak boleh diabaikan, yaitu keamanan digital. Semakin sering kita bertransaksi secara digital, semakin besar pula risiko ancaman kejahatan siber yang perlu kita waspadai.</p>
+
+                <ol>
+                    <li>
+                        <h2>Ancaman Penipuan Investasi (Investment Scam)</h2>
+                        <p>Salah satu modus kejahatan digital yang paling sering muncul adalah penipuan berkedok investasi. Pelaku biasanya menawarkan keuntungan yang terlalu besar dan tidak masuk akal, misalnya klaim “untung 30 persen per hari”, “return dijamin tanpa risiko”, atau “cuan instan langsung cair”. Tawaran seperti ini sering muncul di media sosial, pesan pribadi, hingga grup keluarga.</p>
+                        <p>Prinsip penting yang perlu dipahami adalah: jika keuntungan terdengar terlalu bagus untuk menjadi kenyataan, maka kemungkinan besar itu adalah penipuan. Investasi yang sehat selalu bersifat transparan, memiliki risiko, diawasi oleh OJK, dan memiliki potensi keuntungan yang wajar. Tidak ada investasi legal yang bisa memberikan cuan besar dalam waktu sangat singkat tanpa risiko.</p>
+                    </li>
+                    <li>
+                        <h2>Penipuan yang Mengatasnamakan Bank atau Aplikasi Resmi</h2>
+                        <p>Selain investasi bodong, terdapat juga modus penipuan yang mengatasnamakan bank, e-wallet, atau aplikasi keuangan resmi. Pesannya biasanya berbentuk peringatan palsu seperti “akun Anda diblokir”, “transaksi mencurigakan terdeteksi”, atau “Anda memenangkan hadiah”. Pelaku biasanya menyisipkan link palsu dan meminta korban memasukkan data pribadi.</p>
+                        <p>Penting untuk diketahui bahwa lembaga keuangan resmi tidak pernah meminta PIN, OTP, password, atau kode rahasia lainnya melalui chat, SMS, atau telepon. Setiap permintaan seperti itu adalah indikasi penipuan.</p>
+                    </li>
+                    <li>
+                        <h2>Modus yang Mengandalkan Kepanikan Korban</h2>
+                        <p>Sebagian besar penipuan digital memanfaatkan faktor kepanikan agar korban bertindak cepat tanpa berpikir. Pelaku sengaja membuat pesan seolah-olah sangat mendesak dan harus segera diklik atau ditanggapi. Reaksi panik inilah yang sering membuat pengguna langsung menekan link berbahaya atau memberikan data sensitif.</p>
+                        <p>Oleh karena itu, langkah pertama ketika menerima pesan mencurigakan bukanlah mengeklik link yang diberikan. Langkah pertama adalah tetap tenang. Setelah itu, lakukan verifikasi secara mandiri melalui kanal resmi.</p>
+                    </li>
+                    <li>
+                        <h2>Cara Memverifikasi Pesan atau Informasi Mencurigakan</h2>
+                        <p>Untuk memastikan apakah sebuah pesan benar atau palsu, beberapa langkah sederhana dapat dilakukan:</p>
+                        <ul>
+                            <li>Periksa apakah nomor pengirim adalah nomor resmi.</li>
+                            <li>Periksa alamat website apakah benar atau ada perubahan ejaan yang mencurigakan.</li>
+                            <li>Pastikan pesan berasal dari aplikasi resmi, bukan SMS atau WA biasa.</li>
+                            <li>Hubungi call center bank atau aplikasi finansial melalui nomor yang tercantum di situs resminya.</li>
+                            <li>Jika ragu, jangan klik link apa pun sebelum melakukan pengecekan.</li>
+                        </ul>
+                        <p>Kebiasaan verifikasi ini dapat mencegah banyak risiko kebocoran data.</p>
+                    </li>
+                    <li>
+                        <h2>Langkah-Langkah Perlindungan Keamanan Digital</h2>
+                        <p>Selain mengenali modus penipuan, menjaga keamanan perangkat dan data pribadi juga sangat penting. Beberapa langkah dasar yang sangat efektif antara lain:</p>
+                        <ul>
+                            <li>Menggunakan password yang kuat dan berbeda untuk setiap aplikasi.</li>
+                            <li>Mengaktifkan verifikasi dua langkah atau two-factor authentication (2FA).</li>
+                            <li>Tidak menyimpan PIN, password, atau OTP di catatan yang mudah diakses.</li>
+                            <li>Selalu melakukan update aplikasi agar fitur keamanan terbaru aktif.</li>
+                            <li>Menghindari penggunaan WiFi publik untuk transaksi keuangan.</li>
+                        </ul>
+                        <p>Langkah kecil ini sangat berpengaruh besar dalam menjaga keamanan akun.</p>
+                    </li>
+                    <li>
+                        <h2>Perkembangan FinTech dan Pentingnya Kewaspadaan</h2>
+                        <p>Industri FinTech berkembang sangat pesat. Teknologi semakin canggih, tetapi di sisi lain, teknik penipuan juga semakin beragam dan kreatif. Karena itu, pengguna perlu menjadi individu yang cerdas dan waspada, bukan hanya pengguna yang ingin serba cepat dan praktis.</p>
+                        <p>Keamanan digital bukan hanya tanggung jawab bank atau perusahaan FinTech, tetapi juga tanggung jawab setiap pengguna. Sebelum memasukkan data, mengklik link, atau mengonfirmasi transaksi, biasakan untuk mengecek terlebih dahulu. Di dunia digital yang bergerak cepat, kewaspadaan adalah bentuk perlindungan terbaik yang bisa kita lakukan.</p>
+                    </li>
+                </ol>
+
+              </article>
+
+            </div>
+
+            <!-- Infografis -->
+            <div class="tab-pane fade" id="infografis-tab-pane" role="tabpanel" aria-labelledby="infografis-tab" tabindex="0">
+              <article class="materi-bacaan">
+                <img src="img/INFOGRAFIS KEAMANAN DIGITAL .jpg" alt="infografis keamanan digital" class="img-infografis">
+              </article>
+            </div>
+
+            <div class="tab-pane fade" id="video-edukasi-tab-pane" role="tabpanel" aria-labelledby="video-edukasi-tab" tabindex="0">
+                <article class="materi-bacaan">
+                    <video src="img/Video Keamanan Digital.mov" class="object-fit-fill video-edukasi"></video>
+                </article>
+            </div>
+
+            <!-- kuiz -->
+            <div class="tab-pane fade" id="kuis-tab-pane" role="tabpanel" aria-labelledby="kuis-tab" tabindex="0">
+              
+              <div class="quiz-wrapper">
+                <!-- Container Soal -->
+                <div id="quiz-container" class="quiz-container">
+                  <!-- soal akan ditampilkan -->
+                  <div id="inner-container" class="inner-container"></div>
+
+                  <!-- tombol next -->
+                  <div class="tombol-next">
+                    <button type="button" class="btn btn-primary" id="next-btn">Berikutnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- JS Boostrtap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      import { header, footer } from "./js/header-footer.js";
+
+      document.getElementById('header').innerHTML = header();
+      document.getElementById('footer').innerHTML = footer();
+    </script>
+    <script src="js/quiz-jenis-fintech.js"></script>
+  </body>
+</html>

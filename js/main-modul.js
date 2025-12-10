@@ -1,6 +1,6 @@
 
 
-const totalModul = 3;
+const totalModul = 5;
 
 function checkModuls() {
     for (let i = 1; i <= totalModul; i++) {
@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Modul status loaded:",
         sessionStorage.getItem("modul1_passed"),
         sessionStorage.getItem("modul2_passed"),
-        sessionStorage.getItem("modul3_passed")
+        sessionStorage.getItem("modul3_passed"),
+        sessionStorage.getItem("modul4_passed"),
+        sessionStorage.getItem("modul5_passed")
     );
 });
 

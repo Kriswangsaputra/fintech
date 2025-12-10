@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintrack</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/063c14fab4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/detail-modul.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <div id="header"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="container-fluid main-content">
+        
+        <!-- Tombol Kembali -->
+        <div class="tombol-kembali">
+            <a href="modul.html"><i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard</a>
+        </div>
+
+        <!-- judul -->
+        <div class="judul">
+            <h2><strong>Ragam Jenis FinTech & Crowdfunding</strong></h2>
+        </div>
+
+        <!-- Tab -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="materi-tab" data-bs-toggle="tab" data-bs-target="#materi-tab-pane" type="button" role="tab" aria-controls="materi-tab-pane" aria-selected="true">Materi Bacaan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="infografis-tab" data-bs-toggle="tab" data-bs-target="#infografis-tab-pane" type="button" role="tab" aria-controls="infografis-tab-pane" aria-selected="false">Infografis</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="kuis-tab" data-bs-toggle="tab" data-bs-target="#kuis-tab-pane" type="button" role="tab" aria-controls="kuis-tab-pane" aria-selected="false">Kuis & Poin</button>
+            </li>
+        </ul>
+
+        <!-- content -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Pengertian & Sejarah Fintech -->
+
+            <!-- Materi Bacaan -->
+            <div class="tab-pane fade show active" id="materi-tab-pane" role="tabpanel" aria-labelledby="materi-tab" tabindex="0">
+
+              <article class="materi-bacaan">
+                <div class="card">
+                  <div class="card-body">
+                    <h3>Ringkasan Materi</h3>
+                    <p>FinTech telah mengubah hampir seluruh aspek keuangan, mulai dari pembayaran, pinjaman, investasi, asuransi, hingga teknologi blockchain. Semua inovasi ini membuat layanan keuangan lebih inklusif, cepat, dan efisien—mendukung perkembangan ekonomi digital modern.</p>
+                  </div>
+                </div>
+
+                <p>FinTech (Financial Technology) adalah inovasi teknologi yang membuat layanan keuangan lebih cepat, mudah, murah, dan dapat diakses oleh masyarakat luas. Pengelompokan FinTech biasanya berdasarkan fungsi layanannya.</p>
+
+                <ol>
+                    <li>
+                        <h2>Payments & Settlement (Pembayaran & Penyelesaian)</h2>
+                        <p>Payments & Settlement adalah kategori FinTech yang berfokus pada penyediaan layanan pembayaran digital yang cepat, aman, dan efisien. Teknologi di bidang ini menggantikan metode pembayaran tradisional seperti uang tunai dan kartu debit dengan sistem yang lebih praktis seperti dompet digital, QR code, dan transfer realtime. Melalui layanan pembayaran digital, masyarakat dapat melakukan berbagai aktivitas finansial seperti membayar tagihan, mentransfer dana, membeli barang, hingga melakukan transaksi ecommercedengan biaya rendah dan waktu proses yang jauh lebih cepat.</p>
+                        <h3 class="sub-title">Fungsi :</h3>
+                        <ul>
+                            <li>Dompet digital</li>
+                            <li>Transfer dana realtime</li>
+                            <li>Sistem pembayaran modern</li>
+                        </ul>
+                        <h3 class="sub-title">Contoh :</h3>
+                        <ul>
+                            <li>OVO, DANA, GoPay (Ewallet)</li>
+                            <li>Wise (transfer internasional)</li>
+                        </ul>
+                    </li>
+                    <br>
+
+                    <li>
+                        <h2> Lending & Financing (Pinjaman & Pembiayaan)</h2>
+                        <p>Memberikan akses pembiayaan tanpa harus bergantung pada bank tradisional.</p>
+
+                        <ol type="a">
+                            <li>
+                                P2P Lending
+                                <p>Lending & Financing adalah kategori FinTech yang menyediakan akses pembiayaan kepada individu maupun bisnis tanpa harus melalui bank tradisional. Salah satu inovasi paling populer adalah PeertoPeer (P2P) Lending, yaitu platform yang mempertemukan lender (pemberi dana) dan borrower (peminjam) secara langsung melalui sistem digital. Dengan model ini, proses persetujuan kredit menjadi lebih cepat dan fleksibel, tanpa persyaratan ketat seperti di bank.</p>
+                                <p><strong>Contoh:</strong> Investree, Amartha, Modalku.</p>
+                            </li>
+                            <li>
+                                Digital Credit / BNPL
+                                <p>Digital Credit atau Buy Now Pay Later (BNPL) yang menawarkan fasilitas cicilan instan tanpa kartu kredit. BNPL memungkinkan pengguna untuk membeli barang sekarang dan membayarnya kemudian dalam tenor tertentu.</p>
+                                <p><strong>Contoh:</strong> Kredivo, Akulaku.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>Crowdfunding (Pendanaan Kolektif)</h2>
+                        <p>Crowdfunding adalah mekanisme pendanaan yang memungkinkan seseorang, organisasi, atau perusahaan mendapatkan dana dari banyak orang (crowd) melalui platform digital. Crowdfunding menjadi solusi alternatif bagi proyekproyek kreatif, bisnis baru, usaha sosial, maupun kebutuhan mendesak seperti biaya pengobatan. Konsep ini bekerja berdasarkan partisipasi masyarakat yang memberikan dana secara sukarela, dengan imbalan tertentu tergantung jenis crowdfundingnya. Dalam ekosistem FinTech global, Crowdfunding termasuk dalam kategori Alternative Funding Platforms karena memberikan pilihan pembiayaan di luar lembaga keuangan formal.</p>
+                        <ol>
+                            <li>
+                                Donationbased Crowdfunding
+                                <p>Donationbased adalah model crowdfunding di mana masyarakat memberikan dana secara sukarela tanpa mengharapkan imbal hasil finansial. Dana biasanya digunakan untuk tujuan sosial seperti bantuan medis, bencana alam, pendidikan, maupun kegiatan amal.</p>
+                                <ul>
+                                    <li><strong>Imbalan: </strong>Tidak ada keuntungan finansial.</li>
+                                    <li><strong>Contoh: </strong>KitaBisa.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Rewardbased Crowdfunding
+                                <p>Rewardbased crowdfunding digunakan untuk mendanai proyek kreatif atau produk baru, seperti film, teknologi gadget, atau karya seni. Pendana memberikan dana dan akan menerima hadiah tertentu setelah proyek selesai—misalnya produk versi awal, merchandise, atau akses eksklusif.</p>
+                                <ul>
+                                    <li><strong>Imbalan: </strong>Produk/hadiah eksklusif.</li>
+                                    <li><strong>Contoh: </strong>Kickstarter, Indiegogo.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Equitybased Crowdfunding (ECF)
+                                <p>Equitybased crowdfunding memungkinkan pendana untuk membeli saham dari startup atau UMKM yang menggalang dana. Dengan berinvestasi melalui platform ECF, pendana berhak atas kepemilikan sebagian perusahaan dan berpotensi mendapatkan keuntungan melalui dividen atau kenaikan nilai saham. Model ini cocok bagi bisnis yang membutuhkan modal tetapi belum dapat mengakses pendanaan dari modal ventura atau bank.</p>
+                                <ul>
+                                    <li><strong>Imbalan: </strong>Kepemilikan saham + potensi keuntungan.</li>
+                                    <li><strong>Contoh: </strong>Bizhare.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Debtbased Crowdfunding (Lending Model)
+                                <p>Debtbased Crowdfunding adalah model di mana pendana memberikan pinjaman kepada individu atau perusahaan dan mendapatkan pengembalian berupa pokok plus bunga. Model ini mirip dengan P2P Lending karena fokusnya pada pinjaman utang.</p>
+                                <ul>
+                                    <li><strong>Imbalan: </strong>Pokok + bunga.</li>
+                                    <li><strong>Contoh: </strong>Platform P2P lending (Investree, Modalku).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>Wealth Management & Investment</h2>
+                        <p>Kategori ini mencakup FinTech yang mempermudah masyarakat untuk berinvestasi dan mengelola kekayaan secara digital. Teknologi seperti roboadvisory memberikan rekomendasi investasi otomatis berdasarkan profil risiko pengguna, sehingga investasi menjadi lebih terarah meskipun pengguna tidak memiliki pengetahuan finansial mendalam. Selain itu, platform broker digital memungkinkan pembelian saham, reksa dana, atau aset keuangan lainnya dengan biaya lebih rendah dan akses yang lebih luas.Perkembangan sektor ini membuat investasi semakin inklusif dan dapat diakses oleh masyarakat umum.</p>
+
+                        <h3 class="sub-title">Contoh :</h3>
+                        <ul>
+                            <li>Roboadvisory: Wealthfront, Bareksa</li>
+                            <li>Online brokerage: Stockbit, Bibit, Ajaib</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>InsurTech (Insurance Technology)</h2>
+                        <p>InsurTech adalah inovasi teknologi dalam industri asuransi yang bertujuan meningkatkan efisiensi, transparansi, dan kenyamanan dalam layanan asuransi. InsurTech mengubah proses yang sebelumnya rumit—seperti pembelian polis, klaim, dan pengecekan status—menjadi sangat mudah melalui aplikasi digital. Beberapa platform bahkan menyediakan perbandingan polis dari berbagai perusahaan asuransi sehingga pengguna dapat memilih produk yang paling sesuai.</p>
+                        <p><strong>Contoh:</strong> Qoala, Pasar Polis.</p>
+                    </li>
+
+                    <li>
+                        <h2>Blockchain & Cryptocurrency</h2>
+                        <p>Blockchain adalah teknologi pencatatan digital terdesentralisasi yang menyimpan data dalam bentuk blokblok yang saling terhubung dan tidak dapat diubah. Karena bersifat transparan, aman, dan bebas dari kontrol satu pihak tertentu, blockchain dianggap sebagai salah satu inovasi terbesar dalam dunia keuangan modern. Teknologi ini memungkinkan terjadinya transaksi tanpa perantara (peertopeer), sehingga biaya menjadi lebih rendah dan proses lebih cepat.</p>
+                        <p><strong>Contoh:</strong> Bitcoin, Ethereum, platform exchange aset kripto.</p>
+                    </li>
+                </ol>
+
+              </article>
+
+            </div>
+
+            <!-- Infografis -->
+            <div class="tab-pane fade" id="infografis-tab-pane" role="tabpanel" aria-labelledby="infografis-tab" tabindex="0">
+              <article class="materi-bacaan">
+                <img src="img/INFOGRAFIS JENIS FINTECH.png" alt="info grafis sejarah fintech" class="img-infografis">
+              </article>
+            </div>
+
+            <div class="tab-pane fade" id="video-edukasi-tab-pane" role="tabpanel" aria-labelledby="video-edukasi-tab" tabindex="0">c</div>
+
+            <!-- kuiz -->
+            <div class="tab-pane fade" id="kuis-tab-pane" role="tabpanel" aria-labelledby="kuis-tab" tabindex="0">
+              
+              <div class="quiz-wrapper">
+                <!-- Container Soal -->
+                <div id="quiz-container" class="quiz-container">
+                  <!-- soal akan ditampilkan -->
+                  <div id="inner-container" class="inner-container"></div>
+
+                  <!-- tombol next -->
+                  <div class="tombol-next">
+                    <button type="button" class="btn btn-primary" id="next-btn">Berikutnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- JS Boostrtap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      import { header, footer } from "./js/header-footer.js";
+
+      document.getElementById('header').innerHTML = header();
+      document.getElementById('footer').innerHTML = footer();
+    </script>
+    <script src="js/quiz-jenis-fintech.js"></script>
+  </body>
+</html>
