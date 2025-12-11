@@ -27,7 +27,7 @@ export function header() {
               <a class="nav-link" href="kalkulator-keuangan.html">Kalkulator Keuangan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Berita</a>
+              <a class="nav-link" href="berita.html">Berita</a>
             </li>
           </ul>
         </div>
