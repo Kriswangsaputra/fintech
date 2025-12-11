@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintrack</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/063c14fab4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/detail-modul.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <div id="header"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="container-fluid main-content">
+        
+        <!-- Tombol Kembali -->
+        <div class="tombol-kembali">
+            <a href="modul.html"><i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard</a>
+        </div>
+
+        <!-- judul -->
+        <div class="judul">
+            <h2><strong>Regulasi Fintech: Indonesia & Global</strong></h2>
+        </div>
+
+        <!-- Tab -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="materi-tab" data-bs-toggle="tab" data-bs-target="#materi-tab-pane" type="button" role="tab" aria-controls="materi-tab-pane" aria-selected="true">Materi Bacaan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="infografis-tab" data-bs-toggle="tab" data-bs-target="#infografis-tab-pane" type="button" role="tab" aria-controls="infografis-tab-pane" aria-selected="false">Infografis</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="kuis-tab" data-bs-toggle="tab" data-bs-target="#kuis-tab-pane" type="button" role="tab" aria-controls="kuis-tab-pane" aria-selected="false">Kuis & Poin</button>
+            </li>
+        </ul>
+
+        <!-- content -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Pengertian & Sejarah Fintech -->
+
+            <!-- Materi Bacaan -->
+            <div class="tab-pane fade show active" id="materi-tab-pane" role="tabpanel" aria-labelledby="materi-tab" tabindex="0">
+
+              <article class="materi-bacaan">
+                <div class="card">
+                  <div class="card-body">
+                    <h3>Ringkasan Materi</h3>
+                    <p>pengawasan fintech oleh OJK dan BI di Indonesia serta standar global seperti FSB, GDPR, dan FATF yang mengatur keamanan, privasi, dan stabilitas agar layanan fintech berjalan aman bagi pengguna.</p>
+                  </div>
+                </div>
+
+                <p>Dalam ekosistem keuangan digital (fintech), regulasi memegang peranan vital untuk menyeimbangkan antara percepatan inovasi teknologi dengan keamanan pengguna serta stabilitas ekonomi. Peta regulasi ini dibagi menjadi dua perspektif utama: Regulasi Domestik (Indonesia) dan Regulasi Internasional (Global).</p>
+
+                <ol>
+                    <li>
+                        <h2>Regulasi Indonesia</h2>
+                        <p>Di Indonesia, pengawasan fintech dilakukan melalui pendekatan twin-peaks, di mana terdapat pembagian tugas yang jelas antara Otoritas Jasa Keuangan (OJK) dan Bank Indonesia (BI).</p>
+                        <ol type="A">
+                            <li>
+                                Otoritas Jasa Keuangan (OJK)
+                                <p>OJK bertanggung jawab atas pengawasan lembaga jasa keuangan dan perlindungan konsumen. Fokus regulasinya meliputi:</p>
+                                <ul>
+                                    <li>
+                                        Ruang Lingkup:
+                                        <ul>
+                                            <li>P2P Lending (Pinjaman Online).</li>
+                                            <li>Equity Crowdfunding (Layanan urun dana).</li>
+                                            <li>Inovasi Keuangan Digital (IKD) lainnya.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Tujuan :
+                                        <p>Memastikan perilaku pasar yang adil (market conduct), kesehatan institusi keuangan, dan melindungi dana serta data konsumen.</p>
+                                    </li>
+                                    <li>
+                                        Contoh Regulasi:
+                                        <p>POJK No. 77/2016: Mengatur layanan pinjam meminjam uang berbasis teknologi informasi (meskipun kini telah diperbarui dengan regulasi yang lebih baru, aturan ini adalah pondasi awal fintech lending di Indonesia).</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Bank Indonesia (BI)
+                                <p>Sebagai bank sentral, fokus utama BI adalah pada sistem pembayaran dan stabilitas makroprudensial.</p>
+                                <ul>
+                                    <li>
+                                        Ruang Lingkup:
+                                        <ul>
+                                            <li>Dompet Digital (E-Wallet).</li>
+                                            <li>QRIS (Quick Response Code Indonesian Standard).</li>
+                                            <li>Mata Uang Digital Bank Sentral (CBDC) / Rupiah Digital.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Tujuan:
+                                        <p>Memastikan kelancaran, keamanan, dan keandalan sistem pembayaran nasional.</p>
+                                    </li>
+                                    <li>
+                                        Contoh Regulasi:
+                                        <p>PBI No. 23/2021: Mengatur tentang Penyedia Jasa Pembayaran (PJP) dan Penyelenggara Infrastruktur Sistem Pembayaran (PIP) untuk mendorong inovasi pembayaran digital.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Standar Keamanan & Kedaulatan Data
+                                <p>Selain perizinan bisnis, regulator (BI dan instansi terkait) menetapkan standar keamanan teknis yang ketat bagi pemain fintech:</p>
+                                <ul>
+                                    <li>
+                                        <strong>Sertifikasi ISO 27001:</strong>
+                                        <p>Standar internasional untuk sistem manajemen keamanan informasi yang wajib dimiliki untuk menjamin keamanan data pengguna.</p>
+                                    </li>
+                                    <li>
+                                        <strong>e-KYC (Electronic Know Your Customer):</strong>
+                                        <p>Proses verifikasi identitas nasabah secara digital untuk mencegah penipuan.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Lokalisasi Data Center:</strong>
+                                        <p>Kewajiban menempatkan pusat data (data center) di wilayah Indonesia untuk menegakkan kedaulatan data dan memudahkan pengawasan hukum.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Regulasi Global / Dunia</h2>
+                        <p>Regulasi global berfungsi sebagai acuan standar (best practice) yang sering diadopsi oleh regulator di berbagai negara untuk menjaga stabilitas keuangan lintas batas.</p>
+
+                        <ol type="A">
+                            <li>
+                                Standar Internasional & FSB (Financial Stability Board)
+                                <p>Menjaga stabilitas sistem keuangan global agar tidak terjadi krisis sistemik akibat kegagalan teknologi atau institusi.</p>
+                                Kerangka Kerja:
+                                <ul>
+                                    <li>
+                                        Basel III:
+                                        <p>Standar permodalan dan manajemen risiko perbankan yang juga memengaruhi fintech yang bermitra dengan bank.</p>
+                                    </li>
+                                    <li>
+                                        Rekomendasi FSB:
+                                        <p>Panduan khusus untuk mengawasi aset kripto dan perusahaan teknologi besar (Big Tech) yang masuk ke sektor keuangan agar tidak memonopoli pasar atau membahayakan ekonomi.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Perlindungan Data & Privasi
+                                <p>Isu privasi menjadi sorotan utama global seiring masifnya pertukaran data.</p>
+                                <ul>
+                                    <li>
+                                        GDPR (General Data Protection Regulation):
+                                        <p>Regulasi Uni Eropa yang dianggap sebagai standar emas perlindungan data pribadi di dunia. GDPR memberikan kontrol penuh kepada pengguna atas data mereka.</p>
+                                    </li>
+                                    <li>
+                                        Contoh Lain:
+                                        <p>CCPA (California Consumer Privacy Act) di Amerika Serikat. Regulasi ini menjadi acuan bagi UU Perlindungan Data Pribadi (UU PDP) di Indonesia.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Anti Pencucian Uang (AML/CFT)
+                                <p>Mencegah fintech digunakan sebagai sarana pencucian uang (Money Laundering) dan pendanaan terorisme (Combating the Financing of Terrorism).</p>
+                                <p><strong>Standar:</strong> Mengikuti panduan FATF (Financial Action Task Force) yang mewajibkan pelaporan transaksi mencurigakan dan transparansi aliran dana, terutama pada aset kripto (Travel Rule).</p>
+                            </li>
+                            <li>
+                                Regulatory Sandboxes (Kotak Pasir Regulasi)
+                                <p>Ruang uji coba terbatas yang aman bagi startup fintech untuk menguji produk inovatif mereka di bawah pengawasan regulator sebelum diluncurkan secara massal.</p>
+                                <ul>
+                                    <li>
+                                        Tujuan:
+                                        <p>Memberikan ruang inovasi tanpa mengorbankan keamanan konsumen. Jika gagal, dampaknya terisolasi; jika berhasil, produk diberi izin penuh.</p>
+                                    </li>
+                                    <li>
+                                        Contoh Penerapan:
+                                        <ul>
+                                            <li>FCA (Inggris): Pelopor konsep sandbox di dunia.</li>
+                                            <li>MAS (Singapura): Sangat aktif menggunakan sandbox untuk inovasi keuangan Asia.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <p>Peta regulasi ini menunjukkan bahwa industri fintech tidak bergerak tanpa aturan. Di Indonesia, kolaborasi OJK dan BI menciptakan ekosistem yang aman, sementara standar global seperti GDPR dan ISO memastikan bahwa fintech beroperasi dengan standar keamanan dan privasi kelas dunia. Tujuannya adalah menciptakan kepercayaan (trust) di mata konsumen.</p>
+
+              </article>
+
+            </div>
+
+            <!-- Infografis -->
+            <div class="tab-pane fade" id="infografis-tab-pane" role="tabpanel" aria-labelledby="infografis-tab" tabindex="0">
+              <article class="materi-bacaan">
+                <img src="img/INFOGRAFIS REGULASI FINTECH.png" alt="Infografis Regulasi Fintech" class="img-infografis">
+              </article>
+            </div>
+
+            <!-- kuiz -->
+            <div class="tab-pane fade" id="kuis-tab-pane" role="tabpanel" aria-labelledby="kuis-tab" tabindex="0">
+              
+              <div class="quiz-wrapper">
+                <!-- Container Soal -->
+                <div id="quiz-container" class="quiz-container">
+                  <!-- soal akan ditampilkan -->
+                  <div id="inner-container" class="inner-container"></div>
+
+                  <!-- tombol next -->
+                  <div class="tombol-next">
+                    <button type="button" class="btn btn-primary" id="next-btn">Berikutnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- JS Boostrtap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      import { header, footer } from "./js/header-footer.js";
+
+      document.getElementById('header').innerHTML = header();
+      document.getElementById('footer').innerHTML = footer();
+    </script>
+    <script src="js/quiz-regulasi-fintech.js"></script>
+  </body>
+</html>
