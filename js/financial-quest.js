@@ -112,16 +112,13 @@ let score = 0;
 
 function showQuestion() {
     const container = document.getElementById("inner-container");
-    const levelTitle = document.getElementById("kuis-tab");
 
     const level = questions[currentLevel];
     const q = level.questions[currentIndex];
 
-    levelTitle.innerText = `${level.title}`;
-
     container.innerHTML = `
         <div class="question-box">
-
+            <h2>${level.title}</h2>
             <div class="header-soal">
                 <div class="nomor"><h4>Pertanyaan ${currentIndex+1} / ${level.questions.length}</h4></div>
                 <div class="point"><h4>Nilai : 20 Point</h4></div>

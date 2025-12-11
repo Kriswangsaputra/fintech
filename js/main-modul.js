@@ -69,3 +69,17 @@ btnSubmit.addEventListener("click", () => {
 
     document.getElementById("form-input-name").style.display = "none";
 });
+
+
+const btnEnterModul = document.getElementById("btn-fintech");
+
+btnEnterModul.addEventListener("click", (e) => {
+
+    const savedName = sessionStorage.getItem("namaUser");
+
+    if (!savedName) {
+        e.preventDefault();
+        alert ("Masukan nama kamu dulu!");
+        return
+    }
+})

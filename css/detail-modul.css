@@ -314,7 +314,7 @@ footer {
 
   section .card{
     min-width: 18rem;
-    }
+  }
     .nav-link {
         max-width: 90px;
         padding: 10px;
@@ -322,7 +322,43 @@ footer {
     }
 
     #infografis-tab, #kuis-tab{
-        padding-block: 19px;
+        padding-block: 20px;
+    }
+
+    .materi-bacaan p, li{
+        font-size: 12px;
+    }
+
+    .materi-bacaan h2{
+        font-size: 14px !important;
+    }
+
+    .img-infografis{
+        width: 100%;
+    }
+
+    .question-box h2{
+        font-size: 14px !important;
+    }
+
+    .options label{
+        font-size: 12px;
+    }
+
+    #next-btn{
+        width: 100%;
+    }
+
+    .video-edukasi{
+        width: 100%;
+    }
+
+    .nav-tab .nav-item .nav-link {
+        font-size: 12px !important;
+    }
+
+    #materi-tab{
+        width: 60px;
     }
 }
 

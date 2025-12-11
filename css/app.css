@@ -1,15 +1,3 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  font-family: "inter", sans-serif;
-  font-size: 14px;
-}
-
 /* jumbotron */
 .jumbotron {
   background: linear-gradient(to bottom right, #db2777, #f43f5e, #be185d);
@@ -107,13 +95,25 @@ main .main-content {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  justify-items: start;
+}
+
+.main-content a{
+  text-decoration: none;
 }
 
 /* main card */
 main .main-content .card {
   border-radius: 14px;
   border: none;
+  
+}
+
+main .main-content .card:hover {
+  transform: translateY(-9%);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 main .main-content .card .materi-mendalam {
@@ -255,7 +255,7 @@ main .main-content .card .card-body p {
   }
 
   main .main-content {
-    padding: 4rem 1.5rem;
-    gap: 2rem;
+    padding: 2rem 1.2rem !important;
+    gap: 1rem !important;
   }
 }

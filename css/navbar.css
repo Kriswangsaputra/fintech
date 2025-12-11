@@ -34,3 +34,14 @@ footer {
   text-align: center;
   margin-top: 4rem;
 }
+
+@media screen and (max-width : 768px) {
+  .navbar {
+    margin: 0px;
+    padding: 0.5rem;
+  }
+
+  .collapse .navbar-nav{
+  gap: 0;
+}
+}

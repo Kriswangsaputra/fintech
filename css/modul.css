@@ -234,5 +234,11 @@ footer {
   section .card{
     min-width: 18rem;
     }
+  
+  .name-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
