@@ -260,7 +260,11 @@ article .card .card-body p {
     font-size: 2rem;
 }
 
-.result-box .trophy-icon .fa-circle-xmark {
+.congratulation-wrap-gagal {
+    text-align: center;
+}
+
+.result-box .trophy-icon-gagal .fa-circle-xmark {
     animation: bounce 1s infinite;
 
     align-self: center;
