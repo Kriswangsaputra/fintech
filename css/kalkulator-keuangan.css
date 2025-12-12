@@ -344,3 +344,31 @@ form .btn-submit:hover{
     font-weight: bolder;
     font-size: 1.5rem;
 }
+
+
+@media screen and (max-width : 768px) {
+    .kalkulator-wrap {
+        flex-wrap: wrap;
+    }
+
+    .kalkulator-input{
+        width: 100%;
+    }
+
+    .contet-wrap {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .card-input {
+        padding: 1rem;
+    }
+
+    .label-check {
+        width: 5rem;
+    }
+
+    .kalkulator-insight {
+        width: 100%;
+    }
+}
