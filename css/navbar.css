@@ -29,7 +29,7 @@
 
 /* footer */
 footer {
-  background-color: white;
+  background-color: #fdfdfd;
   padding: 2rem 2rem;
   text-align: center;
   margin-top: 4rem;
@@ -42,6 +42,11 @@ footer {
   }
 
   .collapse .navbar-nav{
-  gap: 0;
-}
+    gap: 0;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
 }

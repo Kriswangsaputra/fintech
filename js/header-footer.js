@@ -5,7 +5,7 @@ export function header() {
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-              src="img/logo01.webp"
+              src="img/logo02.png"
               alt="Logo fintrack"
               width="200"
               height="auto"

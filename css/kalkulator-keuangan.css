@@ -371,4 +371,52 @@ form .btn-submit:hover{
     .kalkulator-insight {
         width: 100%;
     }
+
+    .card-aset-recomendation .card-body-aset-recomendation h3 {
+        font-size: 10px !important;
+    }
+
+    .card-aset-recomendation .card-body-aset-recomendation .product .persentage-recomendation h4 {
+        font-size: 10px !important;
+    }
+
+    .location-recomendation {
+        gap: 0.4rem;
+    }
+
+    .product-recomendation p {
+        margin-bottom: 0;
+    }
+
+    .card-body-aset-recomendation {
+        gap: 1rem;
+    }
+
+    .product {
+        width: 60%;
+    }
+
+    .nominal {
+        flex: 1 1;
+    }
+
+    #finance-clasification {
+        font-size: 26px;
+    }
+
+    .head-insight .icon i {
+        font-size: 6rem;
+    }
+
+    .sum #operation{
+        font-size: 12px;
+    }
+
+    .detail h4{
+        font-size: 12px !important;
+    }
+
+    .head-insight {
+        gap: 0;
+    }
 }

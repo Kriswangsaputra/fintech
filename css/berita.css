@@ -2,3 +2,27 @@
     box-shadow: none !important;
     border: none;
 }
+
+@media screen and (max-width : 768px) {
+    #myTab {
+        padding-right: 0;
+        border: none;
+    }
+
+    .nav-link.active {
+        display: none;
+    }
+
+    .main-content {
+        gap: 0.5rem !important;
+    }
+
+    .main-article {
+        padding: 0;
+    }
+
+    .main-article h2 {
+        font-size: 14px !important;
+    }
+
+}
