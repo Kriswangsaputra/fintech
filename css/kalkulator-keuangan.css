@@ -114,6 +114,11 @@ form .btn-submit:hover{
     gap: 0.5rem;
 }
 
+#risiko-desc {
+    font-size: 11px;
+    font-style: italic;
+}
+
 
 /* kondisi ketika profil risiko di checklist */
 #option1:checked + .btn {

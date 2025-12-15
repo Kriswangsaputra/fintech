@@ -1,3 +1,22 @@
+// Profil Risiko
+const profilRisiko = document.querySelectorAll("input[name='options']");
+const risikoDesc = document.getElementById("risiko-desc");
+
+profilRisiko.forEach( risk => {
+    risk.addEventListener("change", function () {
+        const riskValue = this.value;
+        if (!riskValue){
+            risikoDesc.innerText = "---";
+        }else if (riskValue === "Aman") {
+            risikoDesc.innerText = "Saya ingin uang aman, walaupun untung kecil.";
+        } else if (riskValue === "Sedang") {
+            risikoDesc.innerText = "Saya berani sedikit risiko untuk untung lebih.";
+        } else {
+            risikoDesc.innerText = "Saya siap risiko tinggi demi untung maksimal.";
+        }
+    });
+});
+
 // ambil id button submit
 const btnSubmit = document.getElementById("submit");
 
@@ -6,11 +25,6 @@ btnSubmit.addEventListener("click", (e) => {
 
     // biar form tidak reload terus menerus
     e.preventDefault();
-
-    // object klasifikasi rekomendasi finansial
-    const kelasRekomendasi = [
-
-    ]
 
     // ambil data input
     const pendapatan = Number(document.getElementById("pendapatan").value.trim());
@@ -209,7 +223,7 @@ btnSubmit.addEventListener("click", (e) => {
     } else if (sisaUang > 5000000 && risiko === "Agresif") {
 
         // insight
-        clasification.innerText = "Financial Growth"
+        clasification.innerText = "Financial Grower"
         fokusUtama.innerText = "Fokus utama : Maksimalkan potensi pertumbuhan dengan instrumen berimbal hasil tinggi. Tetap lakukan diversifikasi untuk mengelola risiko."
         bgInsight.style.backgroundColor = "#8b5cf6"
         icon.innerHTML = '<i class="fa-solid fa-chart-line"></i>'
